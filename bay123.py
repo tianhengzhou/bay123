@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import time
 from selenium import webdriver
+from pyvirtualdisplay import Display
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -11,6 +12,8 @@ from selenium.webdriver.common.by import By
 class Modules:
     def __init__(self):
         self.driver = webdriver.Chrome()
+        display = Display(visible=0, size=(800, 600))
+        display.start()
 
     def bay123_autopost(self):
         url = 'http://bay123.com/forum.php?mod=post&action=newthread&fid=40'
