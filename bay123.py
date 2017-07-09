@@ -13,7 +13,7 @@ class Modules:
     def __init__(self):
         display = Display(visible=0, size=(1024, 768))
         display.start()
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Chrome('./chromedriver')
 
     def bay123_autopost(self):
         url = 'http://bay123.com/forum.php?mod=post&action=newthread&fid=40'
