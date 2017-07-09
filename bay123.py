@@ -11,7 +11,7 @@ from selenium.webdriver.common.by import By
 
 class Modules:
     def __init__(self):
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Chrome('/usr/local/share/chromedriver')
         display = Display(visible=0, size=(800, 600))
         display.start()
 
