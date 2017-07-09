@@ -11,9 +11,9 @@ from selenium.webdriver.common.by import By
 
 class Modules:
     def __init__(self):
-        self.driver = webdriver.Chrome('./chromedriver')
         display = Display(visible=0, size=(800, 600))
         display.start()
+        self.driver = webdriver.Chrome()
 
     def bay123_autopost(self):
         url = 'http://bay123.com/forum.php?mod=post&action=newthread&fid=40'
